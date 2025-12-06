@@ -63,29 +63,32 @@
     .qr-card {
       display: inline-flex;
       align-items: center;
-      gap: 16px;
-      padding: 12px 16px;
+      gap: 18px;
+      padding: 14px 18px;
       background: #fff;
       border-radius: 8px;
       box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
       border: 1px solid rgba(0, 0, 0, 0.06);
 
       /* Fixed-but-flexible sizing to mirror the reference card */
-      width: clamp(240px, 35vw, 280px);
-      min-height: 128px;
+      width: clamp(260px, 36vw, 300px);
+      min-height: 144px;
     }
 
     .qr-image {
       flex: 0 0 auto;
-      width: clamp(110px, 15vw, 130px);
+      width: clamp(125px, 18vw, 148px);
       aspect-ratio: 1 / 1;
       display: block;
-      object-fit: cover;
+      object-fit: contain;
       background: #fff;
+      border-radius: 4px;
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      padding: 4px;
     }
 
     .label {
-      font-size: clamp(1rem, 2.2vw, 1.25rem);
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
       letter-spacing: 0.08em;
       color: #000;
       text-shadow: 0 0 4px rgba(255, 244, 214, 0.65);
