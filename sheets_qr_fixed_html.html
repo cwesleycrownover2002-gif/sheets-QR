@@ -62,6 +62,17 @@
     /* Card wrapper to match reference sizing */
     .qr-card {
       display: inline-flex;
+    /* QR container – similar size to original white card, not full screen */
+    .qr-wrapper {
+      width: clamp(200px, 26vw, 280px);
+      aspect-ratio: 1 / 1;
+
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+
+      display: flex;
       align-items: center;
       gap: 18px;
       padding: 14px 18px;
