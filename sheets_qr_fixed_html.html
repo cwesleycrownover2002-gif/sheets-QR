@@ -61,8 +61,7 @@
 
     /* QR container – similar size to original white card, not full screen */
     .qr-wrapper {
-      width: min(38vh, 38vw);
-      max-width: 320px;
+      width: clamp(200px, 26vw, 280px);
       aspect-ratio: 1 / 1;
 
       background: transparent;
