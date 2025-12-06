@@ -63,28 +63,29 @@
     .qr-card {
       display: inline-flex;
       align-items: center;
-      gap: 12px;
-      padding: 8px 14px 8px 10px;
+      gap: 16px;
+      padding: 12px 16px;
       background: #fff;
       border-radius: 8px;
       box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
       border: 1px solid rgba(0, 0, 0, 0.06);
 
-      /* Clamp width so QR and text proportions stay similar to reference */
-      min-width: 210px;
-      max-width: 260px;
+      /* Fixed-but-flexible sizing to mirror the reference card */
+      width: clamp(240px, 35vw, 280px);
+      min-height: 128px;
     }
 
     .qr-image {
       flex: 0 0 auto;
-      width: clamp(78px, 10vw, 92px);
+      width: clamp(110px, 15vw, 130px);
       aspect-ratio: 1 / 1;
       display: block;
-      object-fit: contain;
+      object-fit: cover;
+      background: #fff;
     }
 
     .label {
-      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      font-size: clamp(1rem, 2.2vw, 1.25rem);
       letter-spacing: 0.08em;
       color: #000;
       text-shadow: 0 0 4px rgba(255, 244, 214, 0.65);
