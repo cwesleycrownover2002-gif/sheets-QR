@@ -5,58 +5,30 @@
   <title>SHEETS – Venmo QR</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Font (same vibe as before) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      /* Dawn palette */
       --dawn-cream: #fff4d6;
-      --dawn-gold:  #ffd48f;
       --dawn-peach: #ffb38a;
-      --dawn-salmon:#ff8a7a;
       --dawn-rose:  #f36b82;
-      --dawn-plum:  #6b2341;
       --dawn-navy:  #0a0a2a;
     }
 
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
+    * { box-sizing: border-box; }
 
     body {
+      margin: 0;
+      min-height: 100vh;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-family: "Courier Prime", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-
-      /* Layered sunrise background */
-      background:
-        radial-gradient(
-          circle at 50% 26%,
-          var(--dawn-cream) 0%,
-          var(--dawn-gold) 20%,
-          var(--dawn-peach) 36%,
-          var(--dawn-salmon) 52%,
-          rgba(243, 107, 130, 0.9) 68%,
-          rgba(107, 35, 65, 0.98) 82%,
-          var(--dawn-navy) 100%
-        ),
-        linear-gradient(
-          180deg,
-          #2b0b2d 0%,
-          var(--dawn-rose) 40%,
-          var(--dawn-navy) 100%
-        );
-
-      background-size: cover;
-      background-position: center;
-      color: #000;
+      background: radial-gradient(circle at 50% 28%, var(--dawn-cream) 0%, var(--dawn-peach) 36%, var(--dawn-rose) 62%, var(--dawn-navy) 100%);
+      font-family: 'Courier Prime', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #0f0f16;
+      padding: 18px;
     }
 
     /* Card wrapper to match reference sizing */
@@ -73,6 +45,7 @@
       box-shadow: none;
 
       display: flex;
+      flex-direction: column;
       align-items: center;
       gap: 18px;
       padding: 14px 18px;
